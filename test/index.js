@@ -18,6 +18,6 @@ describe('Products list component test', function(){
     const listItems = TestUtils.scryRenderedDOMComponentsWithClass(productsList, 'products-list-item');
     listItems.should.have.lengthOf(1);
     listItems[0].should.not.be.empty;
-    listItems[0].getDOMNode().textContent.should.be.equal('Test product 1');
+    listItems[0].textContent.should.be.equal('Test product 1');
   });
 });
